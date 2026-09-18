@@ -1,0 +1,77 @@
+<!-- card-size: 1080x1080 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../ds/tokens.css" />
+<style>
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 1080px; height: 1080px; overflow: hidden;
+    background: var(--tc-offwhite);
+    font-family: var(--font-body); color: var(--tc-ink-900);
+    display: flex; flex-direction: column;
+  }
+  .stripe-top {
+    height: 22px; flex: none;
+    background-image: repeating-linear-gradient(120deg,
+      var(--tc-navy) 0, var(--tc-navy) 18px,
+      #fff 18px, #fff 36px,
+      var(--tc-red) 36px, var(--tc-red) 54px);
+  }
+  .main { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 40px 64px 20px; position: relative; }
+  .eyebrow {
+    font-family: var(--font-display); font-weight: var(--fw-bold);
+    font-size: 26px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--tc-red);
+  }
+  h1 {
+    margin: 10px 0 0; font-family: var(--font-display); font-weight: var(--fw-black);
+    font-size: 80px; line-height: 1; letter-spacing: -0.02em; color: var(--tc-navy);
+  }
+  .deadline {
+    margin-top: 22px; background: var(--tc-red); color: #fff;
+    padding: 20px 28px; display: flex; align-items: center; gap: 24px;
+  }
+  .deadline .big {
+    font-family: var(--font-display); font-weight: var(--fw-black);
+    font-size: 50px; line-height: 1; white-space: nowrap;
+  }
+  .deadline .txt { font-size: 24px; line-height: 1.3; font-weight: var(--fw-semibold); }
+  .ways { margin-top: 22px; display: flex; flex-direction: column; gap: 14px; }
+  .way { display: flex; align-items: center; gap: 22px; background: #fff; border: 2px solid var(--tc-ink-200); padding: 14px 26px; }
+  .way .tag {
+    flex: none; width: 168px; font-family: var(--font-display); font-weight: var(--fw-extrabold);
+    font-size: 26px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--tc-red);
+  }
+  .way .info { font-size: 27px; line-height: 1.3; color: var(--tc-ink-800); }
+  .way .info strong { color: var(--tc-navy); font-weight: var(--fw-bold); }
+  .return { margin-top: 20px; font-size: 24px; line-height: 1.4; color: var(--tc-ink-700); }
+  .return strong { color: var(--tc-navy); }
+  .footer { flex: none; display: flex; align-items: center; justify-content: space-between; padding: 12px 64px 26px; }
+  .footer img { height: 66px; }
+  .footer .src { font-size: 24px; color: var(--tc-ink-500); font-weight: var(--fw-medium); }
+</style>
+</head>
+<body>
+  <div class="stripe-top"></div>
+  <div class="main">
+    <div class="eyebrow">November 3rd Election · Vote by Mail</div>
+    <h1>MAIL BALLOTS<br />GO OUT SOON</h1>
+    <div class="deadline">
+      <div class="big">SEP 24TH - OCT 1ST</div>
+      <div class="txt">Florida's window for elections offices to mail ballots. Yours may go out <b>any day that week.</b></div>
+    </div>
+    <div class="ways">
+      <div class="way"><div class="tag">Asked?</div><div class="info">Requested a mail ballot this year? <strong>No need to ask again.</strong> Watch your mailbox.</div></div>
+      <div class="way"><div class="tag">Not yet?</div><div class="info">Request by <strong>5 PM Thursday, Oct. 22nd</strong> at <strong>taylorelectionsfl.gov</strong></div></div>
+      <div class="way"><div class="tag">Not sure?</div><div class="info">Call <strong>(850) 838-3515</strong>, or just request again online. <strong>A repeat request won't hurt anything.</strong></div></div>
+    </div>
+    <div class="return">When it arrives, fill it out and sign the envelope. Mail it back early, or skip the mail and <strong>drop it off at the elections office</strong>, 433 N. US Hwy 19 in Perry, weekdays 8 to 5. It must be <strong>received by 7 PM on Tuesday, November 3rd.</strong> Postmarks do not count.</div>
+  </div>
+  <div class="footer">
+    <img src="../ds/logo.svg" alt="Taylor County Democrats" />
+    <div class="src">taylorfldems.org</div>
+  </div>
+</body>
+</html>
